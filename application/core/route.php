@@ -2,6 +2,8 @@
 
 namespace app\core;
 
+use app\controllers\Controller_Portfolio;
+
 class Route
 {
     static function start()
@@ -42,9 +44,8 @@ class Route
 
         $controller = new $controller_name;
         $action = $action_name;
-
         if (method_exists($controller, $action)) {
-            $controller->$action();
+            $controller->{$action}();
         } else {
             Route::ErrorPage404();
         }
