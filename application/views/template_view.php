@@ -8,6 +8,7 @@
 <body>
 <ul>
     <li><a href="/">Главная</a></li>
+    <li><a href="/news">Новости</a></li>
     <li><a href="/portfolio">Портфолио</a></li>
 </ul>
 <?php include $content_view; ?>
